@@ -11,7 +11,7 @@ image processing. Each sample includes RAW, ProRAW, preview, and reference image
   </a>
 </p>
 
-[Interactive RAW / Reference comparisons](https://lc-isp-benchmark.kkchen318.chatgpt.site) · [Dataset](#dataset) · [Training](#training)
+For the dataset showcase, please visit the [LC-ISP project page](https://lc-isp-benchmark.kkchen318.chatgpt.site).
 
 ## Dataset
 
