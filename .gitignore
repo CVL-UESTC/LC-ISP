@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# Keep datasets, pretrained weights, and experiment outputs outside Git.
+data/
+datasets/
+checkpoints/
+ckpt/
+logs/
+results/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+events.out.tfevents.*

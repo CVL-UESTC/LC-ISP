@@ -1,0 +1,22 @@
+{
+  "name": "lite",
+  "restoration": {
+    "img_channel": 4,
+    "width": 16,
+    "middle_blk_num": 2,
+    "enc_blk_nums": [2, 2, 2],
+    "dec_blk_nums": [2, 2, 2]
+  },
+  "enhancement": {
+    "ci": 3,
+    "grid_range": 8,
+    "scale_factor": 0.125,
+    "co": 4,
+    "kernel": 1,
+    "layer": 2,
+    "width": 8,
+    "enc_blks": [2, 2, 2],
+    "dec_blks": [2, 2, 2],
+    "middle_blk_num": 2
+  }
+}
