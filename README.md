@@ -1,28 +1,13 @@
-# LC-ISP
+# LC-ISP Benchmark
 
-PyTorch implementation of **Dual-Stage ISP** for the LC-ISP benchmark.
+**Learning Advanced ISP with Live and Capture Streams**
 
-The network is defined as `DualStageISP` in `dual_stage_isp.py`, combining
-`RestorationNet` and `EnhancementNet`.
+LC-ISP provides aligned live- and capture-stream data for learning RAW-to-sRGB
+image processing. Each sample includes RAW, ProRAW, preview, and reference images.
 
-## Models
+![Live and capture streams used to construct LC-ISP](docs/assets/live-capture-streams.jpg)
 
-| Model | Config | Params (M) | GFLOPs |
-| --- | --- | --- | --- |
-| Base | [base.json](configs/base.json) | 23.984 | 42.58 |
-| Medium | [medium.json](configs/medium.json) | 6.359 | 10.98 |
-| Lite | [lite.json](configs/lite.json) | 0.535 | 2.50 |
-
-GFLOPs are measured on 448 × 448 RAW inputs, packed into 4 × 224 × 224 tensors,
-using 2 × MACs. Model settings are defined in `configs/`.
-
-## Installation
-
-Python 3.10, PyTorch 2.6.0, and torchvision 0.21.0.
-
-```bash
-pip install -r requirements.txt
-```
+[Interactive RAW / Reference comparisons](https://cvl-uestc.github.io/LC-ISP/) · [Dataset](#dataset) · [Training](#training)
 
 ## Dataset
 
@@ -77,6 +62,28 @@ The validation split uses the `test` filenames and directory shown above. The
 TXT files list sample IDs. The corresponding JSON files contain file paths,
 camera parameters, and crop coordinates. File paths in the JSON files are
 relative to `LC-ISP-data/data/`.
+
+## Models
+
+The Dual-Stage ISP baseline combines `RestorationNet` and `EnhancementNet`.
+The network is defined as `DualStageISP` in `dual_stage_isp.py`.
+
+| Model | Config | Params (M) | GFLOPs |
+| --- | --- | --- | --- |
+| Base | [base.json](configs/base.json) | 23.984 | 42.58 |
+| Medium | [medium.json](configs/medium.json) | 6.359 | 10.98 |
+| Lite | [lite.json](configs/lite.json) | 0.535 | 2.50 |
+
+GFLOPs are measured on 448 × 448 RAW inputs, packed into 4 × 224 × 224 tensors,
+using 2 × MACs. Model settings are defined in `configs/`.
+
+## Installation
+
+Python 3.10, PyTorch 2.6.0, and torchvision 0.21.0.
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Training
 

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LC-ISP: a dataset and benchmark for learning advanced ISP with aligned live and capture streams. Explore interactive RAW and reference comparisons.">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>LC-ISP Benchmark — Live and Capture Streams</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23252c32'/%3E%3Cpath d='M16 16h13v13H16zM35 35h13v13H35z' fill='%23478fca'/%3E%3Cpath d='M35 16h13v13H35zM16 35h13v13H16z' fill='%23cc655e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="comparisons.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#main" aria-label="LC-ISP home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>LC-ISP</a>
+    <nav aria-label="Main navigation">
+      <a href="#comparisons">Explore</a>
+      <a href="#overview">Overview</a>
+      <a href="#download">Dataset</a>
+      <a href="https://github.com/CVL-UESTC/LC-ISP">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <p class="eyebrow"><span></span> DATASET &amp; BENCHMARK</p>
+      <h1>LC-ISP</h1>
+      <p class="hero-title">Learning Advanced ISP with<br>Live and Capture Streams</p>
+      <p class="intro">Aligned data from two imaging streams of the same camera. Learn from single-frame RAW inputs, live previews, fused ProRAW intermediates, and capture-stream reference images.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#comparisons">Explore the dataset <span aria-hidden="true">↓</span></a>
+        <a class="button" href="https://pan.baidu.com/s/1lId0WNqjVILaTnANBtMbFQ?pwd=jd6v">Download dataset <span aria-hidden="true">↗</span></a>
+      </div>
+      <dl class="stats">
+        <div><dt>Training samples</dt><dd>48,546</dd></div>
+        <div><dt>Validation samples</dt><dd>5,400</dd></div>
+        <div><dt>Aligned files per sample</dt><dd>4</dd></div>
+      </dl>
+    </section>
+
+    <section id="comparisons" class="comparisons section wrap" aria-labelledby="comparison-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">EXPLORE THE DATA</p><h2 id="comparison-title">RAW to reference.</h2></div>
+        <p>Drag the divider to compare each pair.<br>Fully left: Reference. Fully right: RAW.</p>
+      </div>
+      <div class="comparison-grid">
+        <figure class="comparison" style="--position:50%">
+          <div class="image-pair">
+            <img class="reference-image" src="assets/samples/0003_22-reference.png" alt="Reference image of a window and a dark interior" width="448" height="448">
+            <img class="raw-image" src="assets/samples/0003_22-raw.png" alt="RAW visualization of the same window" width="448" height="448">
+            <span class="image-label raw-label">RAW</span><span class="image-label reference-label">Reference</span>
+            <span class="divider" aria-hidden="true"><span>↔</span></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Window detail: RAW and reference comparison" aria-valuetext="50% RAW, 50% Reference">
+          </div>
+          <figcaption><span><b>01</b> Window detail</span><span class="endpoints"><button type="button" data-position="0">Reference</button><span aria-hidden="true">↔</span><button type="button" data-position="100">RAW</button></span></figcaption>
+        </figure>
+        <figure class="comparison" style="--position:50%">
+          <div class="image-pair">
+            <img class="reference-image" src="assets/samples/0114_22-reference.png" alt="Reference image of air conditioners and a brick facade" width="448" height="448" loading="lazy">
+            <img class="raw-image" src="assets/samples/0114_22-raw.png" alt="RAW visualization of the same brick facade" width="448" height="448" loading="lazy">
+            <span class="image-label raw-label">RAW</span><span class="image-label reference-label">Reference</span>
+            <span class="divider" aria-hidden="true"><span>↔</span></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Outdoor texture: RAW and reference comparison" aria-valuetext="50% RAW, 50% Reference">
+          </div>
+          <figcaption><span><b>02</b> Outdoor texture</span><span class="endpoints"><button type="button" data-position="0">Reference</button><span aria-hidden="true">↔</span><button type="button" data-position="100">RAW</button></span></figcaption>
+        </figure>
+        <figure class="comparison" style="--position:50%">
+          <div class="image-pair">
+            <img class="reference-image" src="assets/samples/0219_22-reference.png" alt="Reference image of books with printed text" width="448" height="448" loading="lazy">
+            <img class="raw-image" src="assets/samples/0219_22-raw.png" alt="RAW visualization of the same books" width="448" height="448" loading="lazy">
+            <span class="image-label raw-label">RAW</span><span class="image-label reference-label">Reference</span>
+            <span class="divider" aria-hidden="true"><span>↔</span></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Printed text: RAW and reference comparison" aria-valuetext="50% RAW, 50% Reference">
+          </div>
+          <figcaption><span><b>03</b> Printed text</span><span class="endpoints"><button type="button" data-position="0">Reference</button><span aria-hidden="true">↔</span><button type="button" data-position="100">RAW</button></span></figcaption>
+        </figure>
+        <figure class="comparison" style="--position:50%">
+          <div class="image-pair">
+            <img class="reference-image" src="assets/samples/0627_22-reference.png" alt="Reference image of brown tiles and a metal rail" width="448" height="448" loading="lazy">
+            <img class="raw-image" src="assets/samples/0627_22-raw.png" alt="RAW visualization of the same indoor tiles" width="448" height="448" loading="lazy">
+            <span class="image-label raw-label">RAW</span><span class="image-label reference-label">Reference</span>
+            <span class="divider" aria-hidden="true"><span>↔</span></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Indoor surfaces: RAW and reference comparison" aria-valuetext="50% RAW, 50% Reference">
+          </div>
+          <figcaption><span><b>04</b> Indoor surfaces</span><span class="endpoints"><button type="button" data-position="0">Reference</button><span aria-hidden="true">↔</span><button type="button" data-position="100">RAW</button></span></figcaption>
+        </figure>
+        <figure class="comparison" style="--position:50%">
+          <div class="image-pair">
+            <img class="reference-image" src="assets/samples/0855_22-reference.png" alt="Reference image of a colorful building detail and striped awning" width="448" height="448" loading="lazy">
+            <img class="raw-image" src="assets/samples/0855_22-raw.png" alt="RAW visualization of the same colorful building" width="448" height="448" loading="lazy">
+            <span class="image-label raw-label">RAW</span><span class="image-label reference-label">Reference</span>
+            <span class="divider" aria-hidden="true"><span>↔</span></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Color and shadow: RAW and reference comparison" aria-valuetext="50% RAW, 50% Reference">
+          </div>
+          <figcaption><span><b>05</b> Color &amp; shadow</span><span class="endpoints"><button type="button" data-position="0">Reference</button><span aria-hidden="true">↔</span><button type="button" data-position="100">RAW</button></span></figcaption>
+        </figure>
+        <figure class="comparison" style="--position:50%">
+          <div class="image-pair">
+            <img class="reference-image" src="assets/samples/0982_22-reference.png" alt="Reference image of a building facade in low light" width="448" height="448" loading="lazy">
+            <img class="raw-image" src="assets/samples/0982_22-raw.png" alt="RAW visualization of the same low-light facade" width="448" height="448" loading="lazy">
+            <span class="image-label raw-label">RAW</span><span class="image-label reference-label">Reference</span>
+            <span class="divider" aria-hidden="true"><span>↔</span></span>
+            <input type="range" min="0" max="100" value="50" aria-label="Low-light facade: RAW and reference comparison" aria-valuetext="50% RAW, 50% Reference">
+          </div>
+          <figcaption><span><b>06</b> Low-light facade</span><span class="endpoints"><button type="button" data-position="0">Reference</button><span aria-hidden="true">↔</span><button type="button" data-position="100">RAW</button></span></figcaption>
+        </figure>
+      </div>
+      <p class="note">Examples from the validation split. RAW images are demosaiced with a fixed display transform.</p>
+      <noscript><p>Enable JavaScript to move the dividers. You can also open the <a href="assets/samples/0003_22-raw.png">RAW visualization</a> and <a href="assets/samples/0003_22-reference.png">reference image</a> directly.</p></noscript>
+    </section>
+
+    <section id="overview" class="overview section" aria-labelledby="overview-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">THE BENCHMARK</p><h2 id="overview-title">Live and capture streams.</h2></div>
+          <p>The same camera, different processing budgets.<br>Aligned supervision across the imaging pipeline.</p>
+        </div>
+        <div class="overview-copy"><p>The live stream processes a single RAW frame for real-time preview. The capture stream uses multi-frame fusion and a larger processing budget to produce its reference image.</p><p>LC-ISP pairs these streams and provides ProRAW intermediates, supporting both end-to-end ISP learning and supervision of individual processing stages.</p></div>
+        <figure class="paper-figure"><a href="assets/live-capture-streams.jpg" aria-label="Open the full-resolution live and capture stream figure"><img src="assets/live-capture-streams.jpg" alt="Paper Figure 1: live single-frame RAW processing compared with multi-frame capture processing, showing differences in detail, noise and recovered information" width="2363" height="1001" loading="lazy"></a><figcaption>Figure 1. The live and capture streams used to construct LC-ISP.</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="download" class="download section wrap" aria-labelledby="download-title">
+      <div class="section-heading"><div><p class="eyebrow">GET STARTED</p><h2 id="download-title">Work with LC-ISP.</h2></div><p>48,546 training samples.<br>5,400 validation samples.</p></div>
+      <div class="download-content">
+        <div><h3>Download the dataset</h3><p>Download all nine TAR archives, the two ID lists, the two metadata JSON files, and <code>extract.sh</code> into the same directory.</p><a class="button primary" href="https://pan.baidu.com/s/1lId0WNqjVILaTnANBtMbFQ?pwd=jd6v">Baidu Netdisk <span aria-hidden="true">↗</span></a><p class="extraction-code">Extraction code <code>jd6v</code></p></div>
+        <div><h3>Extract and train</h3><pre><code>bash /path/to/LC-ISP-data/extract.sh</code></pre><p>Use the extracted directory as the dataset path. The validation split is stored under the <code>test</code> filenames and directory.</p><a class="text-link" href="https://github.com/CVL-UESTC/LC-ISP#training">Training &amp; evaluation instructions <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="file-table"><table><caption>Four aligned files per sample</caption><thead><tr><th scope="col">RAW image</th><th scope="col">ProRAW image</th><th scope="col">Preview image</th><th scope="col">Reference image</th></tr></thead><tbody><tr><td><code>&lt;id&gt;.raw</code></td><td><code>&lt;id&gt;_pro.raw</code></td><td><code>&lt;id&gt;.png</code></td><td><code>&lt;id&gt;_pro.png</code></td></tr></tbody></table></div>
+      <div class="baseline"><span class="eyebrow">BASELINE</span><p><strong>Dual-Stage ISP</strong> combines RestorationNet and EnhancementNet, with Base, Medium, and Lite configurations.</p><a class="text-link" href="https://github.com/CVL-UESTC/LC-ISP#models">Explore the code <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#main">LC-ISP Benchmark</a><span>Learning Advanced ISP with Live and Capture Streams</span><a href="https://github.com/CVL-UESTC/LC-ISP">GitHub ↗</a></footer>
+</body>
+</html>
