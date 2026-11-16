@@ -1,6 +1,33 @@
-# LC-ISP Benchmark
+<h2 align="center">LC-ISP Benchmark: Learning Advanced ISP with Live and Capture Streams</h2>
 
-**Learning Advanced ISP with Live and Capture Streams**
+<p align="center">
+  Kai Chen &middot;
+  Junyu Lou &middot;
+  Jinhua Zhang &middot;
+  Weiyi You &middot;
+  <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ">Shuhang Gu</a><sup>*</sup>
+</p>
+
+<p align="center">
+  University of Electronic Science and Technology of China
+</p>
+
+<p align="center">
+  <sup>*</sup> Corresponding author
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Paper-Coming%20soon-lightgrey?style=flat-square" alt="Paper: Coming soon">
+  <a href="https://lc-isp-benchmark.kkchen318.chatgpt.site">
+    <img src="https://img.shields.io/badge/Project%20Page-LC--ISP-346B9B?style=flat-square" alt="Project page">
+  </a>
+  <a href="https://github.com/CVL-UESTC/LC-ISP">
+    <img src="https://img.shields.io/badge/Code-GitHub-24292F?style=flat-square&logo=github" alt="Code">
+  </a>
+  <a href="https://pan.baidu.com/s/1lId0WNqjVILaTnANBtMbFQ?pwd=jd6v">
+    <img src="https://img.shields.io/badge/Dataset-Baidu%20Netdisk-06A17D?style=flat-square" alt="Dataset">
+  </a>
+</p>
 
 LC-ISP provides aligned live- and capture-stream data for learning RAW-to-sRGB
 image processing. Each sample includes RAW, ProRAW, preview, and reference images.
