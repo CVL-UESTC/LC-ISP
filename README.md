@@ -5,7 +5,11 @@
 LC-ISP provides aligned live- and capture-stream data for learning RAW-to-sRGB
 image processing. Each sample includes RAW, ProRAW, preview, and reference images.
 
-![Live and capture streams used to construct LC-ISP](docs/assets/live-capture-streams.jpg)
+<p align="center">
+  <a href="docs/assets/live-capture-streams.pdf">
+    <img src="docs/assets/live-capture-streams.png" alt="Live and capture streams used to construct LC-ISP" width="800">
+  </a>
+</p>
 
 [Interactive RAW / Reference comparisons](https://cvl-uestc.github.io/LC-ISP/) · [Dataset](#dataset) · [Training](#training)
 
