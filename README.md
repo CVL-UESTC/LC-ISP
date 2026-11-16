@@ -24,7 +24,7 @@
   <a href="https://github.com/CVL-UESTC/LC-ISP">
     <img src="https://img.shields.io/badge/Code-GitHub-24292F?style=flat-square&logo=github" alt="Code">
   </a>
-  <a href="https://pan.baidu.com/s/1lId0WNqjVILaTnANBtMbFQ?pwd=jd6v">
+  <a href="https://pan.baidu.com/s/1j4xmrvdGeY4ra2wigO1_Vw?pwd=j4g6">
     <img src="https://img.shields.io/badge/Dataset-Baidu%20Netdisk-06A17D?style=flat-square" alt="Dataset">
   </a>
 </p>
@@ -42,9 +42,9 @@ For the dataset showcase, please visit the [LC-ISP project page](https://lc-isp-
 
 ## Dataset
 
-Download the dataset from [Baidu Netdisk](https://pan.baidu.com/s/1lId0WNqjVILaTnANBtMbFQ?pwd=jd6v).
+Download the dataset from [Baidu Netdisk](https://pan.baidu.com/s/1j4xmrvdGeY4ra2wigO1_Vw?pwd=j4g6).
 
-**Extraction code:** `jd6v`
+**Extraction code:** `j4g6`
 
 The dataset contains **48,546 training samples** and **5,400 validation samples**.
 
