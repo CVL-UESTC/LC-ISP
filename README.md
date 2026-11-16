@@ -1,10 +1,10 @@
 <h2 align="center">LC-ISP Benchmark: Learning Advanced ISP with Live and Capture Streams</h2>
 
 <p align="center">
-  Kai Chen &middot;
-  Junyu Lou &middot;
-  Jinhua Zhang &middot;
-  Weiyi You &middot;
+  <a href="https://scholar.google.com/citations?user=JGz8LPoAAAAJ">Kai Chen</a> &middot;
+  <a href="https://scholar.google.com/citations?user=SpYwv_AAAAAJ">Junyu Lou</a> &middot;
+  <a href="https://scholar.google.com/citations?user=tyYxiXoAAAAJ">Jinhua Zhang</a> &middot;
+  <a href="https://scholar.google.com/citations?user=q4uALoAAAAAJ">Weiyi You</a> &middot;
   <a href="https://scholar.google.com/citations?user=-kSTt40AAAAJ">Shuhang Gu</a><sup>*</sup>
 </p>
 
