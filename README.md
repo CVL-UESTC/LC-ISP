@@ -20,7 +20,7 @@
   <a href="https://arxiv.org/abs/2611.19284">
     <img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv" alt="Paper on arXiv">
   </a>
-  <a href="https://lc-isp-benchmark.kkchen318.chatgpt.site">
+  <a href="https://kkchen-lcisp.pages.dev/">
     <img src="https://img.shields.io/badge/Project%20Page-LC--ISP-346B9B?style=flat-square" alt="Project page">
   </a>
   <a href="https://github.com/CVL-UESTC/LC-ISP">
@@ -40,7 +40,7 @@ image processing. Each sample includes RAW, ProRAW, preview, and reference image
   </a>
 </p>
 
-For the dataset showcase, please visit the [LC-ISP project page](https://lc-isp-benchmark.kkchen318.chatgpt.site).
+For the dataset showcase, please visit the [LC-ISP project page](https://kkchen-lcisp.pages.dev/).
 
 ## Dataset
 
