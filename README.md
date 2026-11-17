@@ -17,7 +17,9 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Paper-Coming%20soon-lightgrey?style=flat-square" alt="Paper: Coming soon">
+  <a href="https://arxiv.org/abs/2611.19284">
+    <img src="https://img.shields.io/badge/Paper-arXiv-B31B1B?style=flat-square&logo=arxiv" alt="Paper on arXiv">
+  </a>
   <a href="https://lc-isp-benchmark.kkchen318.chatgpt.site">
     <img src="https://img.shields.io/badge/Project%20Page-LC--ISP-346B9B?style=flat-square" alt="Project page">
   </a>
@@ -47,6 +49,9 @@ Download the dataset from [Baidu Netdisk](https://pan.baidu.com/s/1j4xmrvdGeY4ra
 **Extraction code:** `j4g6`
 
 The dataset contains **48,546 training samples** and **5,400 validation samples**.
+
+To provide a more challenging evaluation, we have re-partitioned the dataset
+into new training and validation splits.
 
 ### Download and extract
 
