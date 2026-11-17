@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>LC-ISP · 场景选择</title>
+  <link rel="stylesheet" href="picker.css?v=all999">
+  <script src="picker.js?v=all999" defer></script>
+</head>
+<body>
+  <header class="masthead shell">
+    <a class="wordmark" href="../">LC-ISP</a>
+    <a class="back-link" href="../">返回展示页 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="shell">
+    <div class="intro">
+      <h1>挑选你想展示的场景</h1>
+      <p>勾选喜欢的图片，可指定一张替换右上角。完成后复制选择，发到聊天里。</p>
+    </div>
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="筛选场景">
+        <button type="button" data-filter="all" aria-pressed="true">全部 <span id="all-count">999</span></button>
+        <button type="button" data-filter="selected" aria-pressed="false">已选 <span id="filter-selected-count">0</span></button>
+      </div>
+      <label class="search"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span><input type="search" id="search" aria-label="查找场景编号" placeholder="查找编号，如 0478" autocomplete="off"></label>
+    </div>
+    <p id="loading" role="status">正在加载图片…</p>
+    <div id="gallery" class="gallery" aria-label="可选场景"></div>
+    <p id="empty" hidden>没有符合条件的场景。</p>
+    <noscript><p>请启用 JavaScript，以便勾选和保存场景选择。</p></noscript>
+  </main>
+  <aside class="selection-bar" aria-label="当前选择">
+    <div class="selection-inner shell">
+      <div class="selection-summary"><strong id="selection-count" aria-live="polite">已选 0 张</strong><span id="hero-summary">右上角：未选择</span></div>
+      <div id="selected-ids" class="selected-ids" aria-label="已选场景编号"></div>
+      <div class="selection-actions"><button type="button" id="clear" class="plain" disabled>清空</button><button type="button" id="export" class="primary" disabled>完成选择</button></div>
+    </div>
+  </aside>
+  <dialog id="preview-dialog" class="preview-dialog" aria-labelledby="preview-title">
+    <div class="preview-header"><h2 id="preview-title"></h2><button type="button" id="close-preview" class="icon-button" aria-label="关闭预览">×</button></div>
+    <div id="preview-pair" class="preview-pair" style="--position:0%">
+      <img id="preview-reference" alt="Reference 完整画面" width="640" height="480">
+      <img id="preview-raw" class="raw-overlay" alt="RAW 完整画面" width="640" height="480">
+      <span class="image-label raw-label">RAW</span><span class="image-label reference-label">Reference</span>
+      <span class="divider" aria-hidden="true"><span>↔</span></span>
+      <input type="range" id="preview-slider" min="0" max="100" value="0" aria-label="RAW 和 Reference 对比">
+    </div>
+    <div class="preview-actions"><div class="pagination"><button type="button" id="previous" class="secondary" aria-label="上一个场景">←</button><button type="button" id="next" class="secondary" aria-label="下一个场景">→</button></div><button type="button" id="preview-hero" class="secondary">用于右上角</button><button type="button" id="preview-select" class="primary">选择这张</button></div>
+  </dialog>
+  <dialog id="export-dialog" class="export-dialog" aria-labelledby="export-title">
+    <div class="preview-header"><h2 id="export-title">把这段选择发到聊天里</h2><button type="button" id="close-export" class="icon-button" aria-label="关闭选择结果">×</button></div>
+    <textarea id="selection-text" aria-label="已选场景和右上角图片编号" readonly rows="7"></textarea>
+    <div class="export-actions"><p id="copy-status" role="status"></p><button type="button" id="copy" class="primary">复制选择</button></div>
+  </dialog>
+</body>
+</html>
